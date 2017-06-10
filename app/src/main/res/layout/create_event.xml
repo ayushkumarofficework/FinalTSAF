@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp">
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:hint="Event Name"
+            android:inputType="text"
+            android:background="@drawable/greybg"
+            android:layout_above="@+id/event_venue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="49dp" />
+
+
+
+        <EditText
+            android:id="@+id/event_venue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Event Venue"
+            android:padding="10dp"
+            android:inputType="text"
+
+            android:background="@drawable/greybg"
+            android:layout_above="@+id/eventStartingDate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="49dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="#ea4c88"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:text="Create Event"
+        />
+
+
+
+        <EditText
+            android:id="@+id/event_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:hint="Event Code"
+            android:inputType="text"
+
+            android:background="@drawable/greybg"
+            android:layout_marginTop="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:textSize="18sp"
+        android:id="@+id/eventStartingDate"
+        android:hint="Starting Date"
+
+        android:background="@drawable/greybg"
+        android:layout_above="@+id/eventEndingDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:textSize="18sp"
+        android:id="@+id/eventEndingDate"
+        android:text="Ending Date"
+
+        android:background="@drawable/greybg"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

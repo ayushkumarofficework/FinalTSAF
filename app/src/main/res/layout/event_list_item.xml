@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="EventName"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/eventVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="EventVenue" />
+
+    <TextView
+        android:id="@+id/eventCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eventVenue"
+        android:layout_alignBottom="@+id/eventVenue"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:text="EventCode" />
+
+</RelativeLayout>

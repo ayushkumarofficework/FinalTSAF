@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_participant_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <Button
+        android:text="Submit"
+        android:background="#ea4c88"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/submitButton"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/remarks"
+        android:hint="Remarks"
+        android:background="@drawable/greybg"
+        android:padding="10dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/feedbackCriteriaListView"
+        android:layout_above="@+id/remarks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2" />
+
+    <TextView
+        android:text="EventName"
+        android:background="@drawable/inputoutline"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventName"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:padding="10dp"
+        android:layout_below="@+id/eventName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+        <TextView
+            android:text="PName"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/participantName"
+            android:layout_below="@+id/eventName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="PEmail"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/participantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/participantEmail"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_add_participants"
+        android:icon="@drawable/ic_menu_add"
+        android:title="add_participants"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_sync"
+        android:icon="@drawable/ic_cloud_white"
+        android:title="Sync Event"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_image"
+        android:title="Upload Image"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_takeAttendance"
+        android:title="Take Attendance"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+
+</menu>

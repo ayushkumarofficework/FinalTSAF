@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_participant_evaluation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="10dp"
+    >
+
+    <TextView
+        android:text="Event Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/eventName"
+        android:background="@drawable/inputoutline"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="Participant Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/participantNameTextview" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/participantNameTextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/evaluationCriteria"
+        android:layout_height="300dp"
+        android:divider="@null"
+        android:layout_above="@+id/maxAltitude" />
+
+    <Button
+        android:background="#ea4c88"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/remarks"
+        android:hint="Remarks"
+        android:padding="10dp"
+        android:background="@drawable/greybg"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@drawable/greybg"
+        android:padding="10dp"
+        android:id="@+id/maxAltitude"
+        android:hint="Max Altitude(ft)"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/remarks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Participant Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participantName"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_alignBaseline="@+id/participantNameTextview"
+        android:layout_alignBottom="@+id/participantNameTextview"
+        android:layout_toRightOf="@+id/participantNameTextview"
+        android:layout_toEndOf="@+id/participantNameTextview"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+</RelativeLayout>

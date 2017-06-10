@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="5dp"
+    android:padding="10dp"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:elevation="10dp">
+
+        <TextView
+            android:text="Criteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/criteria" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressTint="#ea4c88"
+            style="@android:style/Widget.Holo.RatingBar"
+            android:stepSize="1" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_participant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/registerButton"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="#ea4c88"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Gender"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/weight"
+        android:layout_alignBottom="@+id/weight"
+        android:layout_toLeftOf="@+id/spinner"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toRightOf="@+id/weight"
+        android:layout_toEndOf="@+id/weight" />
+
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/weight"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/participantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/participantEmail"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Weight in Kg"
+        android:inputType="numberDecimal"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/participantEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dateOfBirth"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="6dp" />
+
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/participantName"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Date Of Birth(dd-mm-yy)"
+        android:inputType="date"
+        android:padding="6dp" />
+
+    <CheckBox
+        android:id="@+id/cNEntrant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cFTEntrant"
+        android:layout_alignBottom="@+id/cFTEntrant"
+        android:layout_alignLeft="@+id/gender"
+        android:layout_alignStart="@+id/gender"
+        android:layout_toRightOf="@+id/cTC"
+        android:background="@drawable/greybg"
+        android:text="New Entrant" />
+
+    <CheckBox
+        android:id="@+id/cFTEntrant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/greybg"
+        android:text="First Time Entrant" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Postal Address"
+        android:inputType="textPostalAddress"
+        android:padding="6dp" />
+
+
+    <LinearLayout
+        android:id="@+id/cTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nameOfOrganization"
+        android:layout_marginTop="22dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxTermsAndCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/greybg"
+            android:checked="false"
+            android:textColor="#CC000000" />
+
+        <TextView
+            android:id="@+id/termsOfAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="I agree to the Terms of Agreement."
+            android:textColor="#CC000000"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nameOfOrganization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cNEntrant"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/greybg"
+        android:ems="10"
+        android:hint="Name of Organizarion"
+        android:inputType="textPersonName"
+        android:padding="6dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/genderSpinner"
+        android:padding="1dp"
+        android:background="@drawable/greybg"
+        android:layout_alignTop="@+id/weight"
+        android:layout_toEndOf="@+id/gender"
+        android:layout_toRightOf="@+id/gender" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/weight"
+        android:entries="@array/genders_array"
+        android:background="@drawable/greybg"
+        android:visibility="visible"
+        android:layout_above="@+id/phoneNumber" />
+
+</RelativeLayout>

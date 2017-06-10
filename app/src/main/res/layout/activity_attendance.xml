@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.federation.Participants.Attendance">
+    <RelativeLayout
+        android:id="@+id/attendance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:background="@drawable/inputoutline"
+            android:text="TypeOfAttendance"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attendanceType"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/attendanceaListView"
+            android:layout_weight="0.11"
+            android:divider="@null"
+            android:layout_below="@+id/attendanceType"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/submitAttendanceButton" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitAttendanceButton"
+            android:textSize="22sp"
+            android:background="#ea4c88"
+            style="@android:style/Widget.Holo.Button"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
